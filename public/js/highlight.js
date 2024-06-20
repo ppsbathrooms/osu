@@ -11,3 +11,13 @@ function setHighlightInfo(buildingId) {
         $('.buildingImg img').attr('src', `style/images/buildings/${building.image}`);
     });
 }
+
+$('#info-button').on('click', () => {
+    $('#info-button').hide();
+    $('#highlightInfo').show();
+})
+
+$('#infoExit').on('click', () => {
+    $('#info-button').show();
+    $('#highlightInfo').hide();
+})

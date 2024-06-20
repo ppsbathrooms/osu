@@ -1,13 +1,17 @@
+:root {
+    --background: #121211;
+}
+
 @font-face {
     font-family: sfMedium;
     src: url(/style/fonts/SF-Pro-Medium.otf);
 }
 
 body {
-    background: #121211;
+    background: var(--background);
     font-family: sfMedium;
     color: #fff;
-    /* overflow-x: hidden; */
+    overflow: hidden;
 }
 
 #highlightInfo {
@@ -20,6 +24,8 @@ body {
     border-right: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+    background: var(--background);
+    display: none;
 }
 
 #infoText {
@@ -72,4 +78,29 @@ body {
     width: 75%;
     border: 3px solid white;
     border-radius: 10px;
+}
+
+#buttons {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: fit-content;
+    width: 20px;
+}
+
+#info-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: var(--background)
+}
+
+#info-button img {
+    width: 18px;
+    height: 18px;
 }
