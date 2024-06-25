@@ -39,7 +39,7 @@ function drawImage() {
   ctx.restore();
 
   // draw building bounding boxes
-  // drawBoundingBoxes();
+  drawBoundingBoxes();
 }
 
 function drawBoundingBoxes() {

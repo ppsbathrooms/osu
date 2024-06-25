@@ -22,5 +22,77 @@
         "y": 442,
         "width": 36,
         "height": 40
+    },
+    {
+        "building": "P. Wayne Valley Sports Performance Center",
+        "address": "2737 SW Ralph Miller Lane",
+        "description": "",
+        "secondaryInfo": "",
+        "brInfo": "7 gender inclusive restrooms in rooms: 0105, 0106, 0108M, 0109M, 0203, 0208M, 0209M",
+        "image": "sports-performance-center.jpg",
+        "x": 450,
+        "y": 441,
+        "width": 15,
+        "height": 44
+    },
+    {
+        "building": "Merritt Truax Indoor Center",
+        "address": "661 SW 30th Street",
+        "description": "",
+        "secondaryInfo": "",
+        "brInfo": "",
+        "image": "truax-center.jpg",
+        "x": 372,
+        "y": 441,
+        "width": 27,
+        "height": 52
+    },
+    {
+        "building": "Magruder Hall",
+        "address": "700 SW 30th Street",
+        "description": "",
+        "secondaryInfo": "Accessibility: ENTRIES: Northeast entry: level into 1st (face east). FLOORS: All floors; 2 elevators: one near main entry, one in south corridor.",
+        "brInfo": "8 gender inclusive restrooms in rooms: 0172A, 0173A, 0295, 0297, 1001, 1003, 2007, 2009",
+        "image": "magruder-hall.jpg",
+        "x": 313,
+        "y": 463,
+        "width": 42,
+        "height": 56
+    },
+    {
+        "building": "Samaritan Athletic Sports Medicine Center",
+        "address": "845 SW 30th Street",
+        "description": "",
+        "secondaryInfo": "",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0106, 0211",
+        "image": "samaritan-medicine-center.jpg",
+        "x": 369,
+        "y": 540,
+        "width": 10,
+        "height": 18
+    },
+    {
+        "building": "OSU Parking",
+        "address": "661 SW 26th Street",
+        "description": "",
+        "secondaryInfo": "",
+        "brInfo": "",
+        "image": "parking-26th.jpg",
+        "x": 534,
+        "y": 443,
+        "width": 30,
+        "height": 39
+    },
+    {
+        "building": "OSU Beaver Store",
+        "address": "663 SW 26th Street",
+        "description": "",
+        "secondaryInfo": "",
+        "brInfo": "",
+        "image": "beaver-store.jpg",
+        "x": 530,
+        "y": 442,
+        "width": 5,
+        "height": 41
     }
 ]
