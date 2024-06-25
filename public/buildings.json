@@ -5,6 +5,22 @@
         "description": "",
         "secondaryInfo": "Accessibility: ENTRIES: Northeast gate. FLOORS: Accessible seating.",
         "brInfo": "13 gender inclusive restrooms in rooms: C0003, P0300A, P0301A, P0302A, P0303A, P0304A, P0305A , P0306A, P0307A3, P0308A, P0309A, P0311A, P0312A",
-        "image": "reser-stadium.jpg"
+        "image": "reser-stadium.jpg",
+        "x": 415,
+        "y": 490,
+        "width": 105,
+        "height": 96
+    },
+    {
+        "building": "Gill Coliseum",
+        "address": "660 SW 26th Street",
+        "description": "",
+        "secondaryInfo": "Accessibility: ENTRIES: Southwest corner entry: ramp up to main floor; West to entry: ramp to basement. FLOORS: All floors via ramps.",
+        "brInfo": "1 gender inclusive restroom in room: 0100",
+        "image": "gill-coliseum.jpg",
+        "x": 475,
+        "y": 442,
+        "width": 36,
+        "height": 40
     }
 ]

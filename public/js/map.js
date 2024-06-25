@@ -10,6 +10,16 @@ let offsetX = 0, offsetY = 0;
 let scale = 1;
 let rafId = null;
 
+let buildings = [];
+
+fetch('buildings.json')
+  .then(response => response.json())
+  .then(data => {
+    buildings = data;
+    if (img.complete) drawImage();
+  })
+  .catch(error => console.error('Error loading buildings data:', error));
+
 img.onload = function() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -27,6 +37,36 @@ function drawImage() {
   ctx.scale(scale, scale);
   ctx.drawImage(img, 0, 0);
   ctx.restore();
+
+  // draw building bounding boxes
+  // drawBoundingBoxes();
+}
+
+function drawBoundingBoxes() {
+  ctx.strokeStyle = 'red';
+  for (const building of buildings) {
+    const box = transformBoundingBox(building);
+    ctx.strokeRect(box.x, box.y, box.width, box.height);
+  }
+}
+
+function transformBoundingBox(building) {
+  return {
+    x: building.x * scale * 4/3 + offsetX,
+    y: building.y * scale * 4/3 + offsetY,
+    width: building.width * scale * 4/3,
+    height: building.height * scale * 4/3
+  };
+}
+
+function isPointInBuilding(x, y, building) {
+  const box = transformBoundingBox(building);
+  return (
+    x >= box.x &&
+    x <= box.x + box.width &&
+    y >= box.y &&
+    y <= box.y + box.height
+  );
 }
 
 function updatePosition(e) {
@@ -41,7 +81,21 @@ function animateFrame() {
   }
 }
 
-canvas.style.cursor = 'default';
+function updateCursorStyle(e) {
+  const rect = canvas.getBoundingClientRect();
+  const mouseX = e.clientX - rect.left;
+  const mouseY = e.clientY - rect.top;
+
+  let isOverBuilding = false;
+  for (const building of buildings) {
+    if (isPointInBuilding(mouseX, mouseY, building)) {
+      isOverBuilding = true;
+      break;
+    }
+  }
+
+  canvas.style.cursor = isOverBuilding ? 'pointer' : 'default';
+}
 
 canvas.addEventListener('mousedown', function(e) {
   isDragging = true;
@@ -54,10 +108,16 @@ canvas.addEventListener('mousedown', function(e) {
 canvas.addEventListener('mousemove', function(e) {
   if (isDragging) {
     updatePosition(e);
+  } else {
+    updateCursorStyle(e);
   }
 });
 
-canvas.addEventListener('mouseup', stopDragging);
+canvas.addEventListener('mouseup', function(e) {
+  stopDragging();
+  updateCursorStyle(e);
+});
+
 canvas.addEventListener('mouseleave', stopDragging);
 
 function stopDragging() {
@@ -66,7 +126,6 @@ function stopDragging() {
     cancelAnimationFrame(rafId);
     rafId = null;
   }
-  canvas.style.cursor = 'default';
 }
 
 canvas.addEventListener('wheel', function(e) {
@@ -88,6 +147,19 @@ canvas.addEventListener('wheel', function(e) {
     offsetY = mouseY - imgY * scale;
 
     drawImage();
+  }
+});
+
+canvas.addEventListener('click', function(e) {
+  const rect = canvas.getBoundingClientRect();
+  const clickX = e.clientX - rect.left;
+  const clickY = e.clientY - rect.top;
+
+  for (const building of buildings) {
+    if (isPointInBuilding(clickX, clickY, building)) {
+      setHighlightInfo(building);
+      return;
+    }
   }
 });
 
