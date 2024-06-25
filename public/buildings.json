@@ -1,98 +1,92 @@
 [
     {
+        "svg": "reeser",
         "building": "Reser Stadium",
         "address": "700 SW 26th Street",
         "description": "",
         "secondaryInfo": "Accessibility: ENTRIES: Northeast gate. FLOORS: Accessible seating.",
         "brInfo": "13 gender inclusive restrooms in rooms: C0003, P0300A, P0301A, P0302A, P0303A, P0304A, P0305A , P0306A, P0307A3, P0308A, P0309A, P0311A, P0312A",
-        "image": "reser-stadium.jpg",
-        "x": 415,
-        "y": 490,
-        "width": 105,
-        "height": 96
+        "image": "reser-stadium.jpg"
     },
     {
+        "svg": "valley-football",
+        "building": "Valley Football Center",
+        "address": "725 SW 30th Street",
+        "description": "",
+        "secondaryInfo": "",
+        "brInfo": "1 gender inclusive restroom in room: 0225",
+        "image": "valley-football.jpg"
+    },
+    {
+        "svg": "reeser-health",
+        "building": "SamCare Express Health Center",
+        "address": "850 SW 26th St",
+        "description": "",
+        "secondaryInfo": "",
+        "brInfo": "",
+        "image": "reeser-health.jpg"
+    },
+    {
+        "svg": "gill-coliseum",
         "building": "Gill Coliseum",
         "address": "660 SW 26th Street",
         "description": "",
         "secondaryInfo": "Accessibility: ENTRIES: Southwest corner entry: ramp up to main floor; West to entry: ramp to basement. FLOORS: All floors via ramps.",
         "brInfo": "1 gender inclusive restroom in room: 0100",
-        "image": "gill-coliseum.jpg",
-        "x": 475,
-        "y": 442,
-        "width": 36,
-        "height": 40
+        "image": "gill-coliseum.jpg"
     },
     {
+        "svg": "wayne-performance",
         "building": "P. Wayne Valley Sports Performance Center",
         "address": "2737 SW Ralph Miller Lane",
         "description": "",
         "secondaryInfo": "",
         "brInfo": "7 gender inclusive restrooms in rooms: 0105, 0106, 0108M, 0109M, 0203, 0208M, 0209M",
-        "image": "sports-performance-center.jpg",
-        "x": 450,
-        "y": 441,
-        "width": 15,
-        "height": 44
+        "image": "sports-performance-center.jpg"
     },
     {
+        "svg": "truax-center",
         "building": "Merritt Truax Indoor Center",
         "address": "661 SW 30th Street",
         "description": "",
         "secondaryInfo": "",
         "brInfo": "",
-        "image": "truax-center.jpg",
-        "x": 372,
-        "y": 441,
-        "width": 27,
-        "height": 52
+        "image": "truax-center.jpg"
     },
     {
+        "svg": "magruder-hall",
         "building": "Magruder Hall",
         "address": "700 SW 30th Street",
         "description": "",
         "secondaryInfo": "Accessibility: ENTRIES: Northeast entry: level into 1st (face east). FLOORS: All floors; 2 elevators: one near main entry, one in south corridor.",
         "brInfo": "8 gender inclusive restrooms in rooms: 0172A, 0173A, 0295, 0297, 1001, 1003, 2007, 2009",
-        "image": "magruder-hall.jpg",
-        "x": 313,
-        "y": 463,
-        "width": 42,
-        "height": 56
+        "image": "magruder-hall.jpg"
     },
     {
+        "svg": "sameritan-center",
         "building": "Samaritan Athletic Sports Medicine Center",
         "address": "845 SW 30th Street",
         "description": "",
         "secondaryInfo": "",
         "brInfo": "2 gender inclusive restrooms in rooms: 0106, 0211",
-        "image": "samaritan-medicine-center.jpg",
-        "x": 369,
-        "y": 540,
-        "width": 10,
-        "height": 18
+        "image": "samaritan-medicine-center.jpg"
     },
     {
+        "svg": "osu-parking",
         "building": "OSU Parking",
         "address": "661 SW 26th Street",
         "description": "",
         "secondaryInfo": "",
         "brInfo": "",
-        "image": "parking-26th.jpg",
-        "x": 534,
-        "y": 443,
-        "width": 30,
-        "height": 39
+        "image": "parking-26th.jpg"
     },
     {
+        "svg": "beaver-store",
         "building": "OSU Beaver Store",
         "address": "663 SW 26th Street",
         "description": "",
         "secondaryInfo": "",
         "brInfo": "",
-        "image": "beaver-store.jpg",
-        "x": 530,
-        "y": 442,
-        "width": 5,
-        "height": 41
+        "image": "beaver-store.jpg"
     }
 ]

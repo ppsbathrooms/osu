@@ -5,16 +5,20 @@ function setHighlightInfo(building) {
     $('#infoSecondaryInfo').html(building.secondaryInfo);
     $('#infoBrInfo').html(building.brInfo);
     $('.buildingImg img').attr('src', `style/images/buildings/${building.image}`);
-    $('#info-button').hide();
-    $('#highlightInfo').show();    
+    showHighlight();
 }
 
 $('#info-button').on('click', () => {
-    $('#info-button').hide();
-    $('#highlightInfo').show();
+    showHighlight();
 })
 
 $('#infoExit').on('click', () => {
+    deselectBuilding();
     $('#info-button').show();
     $('#highlightInfo').hide();
 })
+
+function showHighlight() {
+    $('#info-button').hide();
+    $('#highlightInfo').show();
+}
