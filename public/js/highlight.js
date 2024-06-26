@@ -13,12 +13,22 @@ $('#info-button').on('click', () => {
 })
 
 $('#infoExit').on('click', () => {
-    deselectBuilding();
-    $('#info-button').show();
-    $('#highlightInfo').hide();
+    hideHighlight();
 })
 
 function showHighlight() {
     $('#info-button').hide();
     $('#highlightInfo').show();
 }
+
+function hideHighlight() {
+    deselectBuilding();
+    $('#info-button').show();
+    $('#highlightInfo').hide();
+}
+
+$(document).on('keydown', function(event) {
+    if (event.key == "Escape") {
+        hideHighlight();
+    }
+});

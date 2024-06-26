@@ -14,6 +14,30 @@ let scale = 1;
 let rafId = null;
 let hoveringBuilding = null;
 
+// svg filters for hover and selection
+const svgFilters = `
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+    <filter id="hover-filter">
+      <feColorMatrix type="matrix" values="
+        0.7 0 0 0 0
+        0 0.7 0 0 0
+        0 0 0.7 0 0
+        0 0 0 1 0
+      "/>
+    </filter>
+    <filter id="selected-filter">
+      <feColorMatrix type="matrix" values="
+        1 0 0 0 0.5
+        0 0.5 0 0 0
+        0 0 0.5 0 0
+        0 0 0 1 0
+      "/>
+    </filter>
+  </svg>
+`;
+
+document.body.insertAdjacentHTML('afterbegin', svgFilters);
+
 baseMap.onload = function() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -32,34 +56,15 @@ function loadBuildingsFromJSON() {
         const building = {
           image: new Image(),
           hitCanvas: document.createElement('canvas'),
-          hoverCanvas: document.createElement('canvas'),
-          selectedCanvas: document.createElement('canvas'),
           data: buildingData,
           isSelected: false
         };
         building.image.src = `/style/maps/osu/buildings/${buildingData.svg}.svg`;
         building.image.onload = function() {
           const hitCtx = building.hitCanvas.getContext('2d', { willReadFrequently: true });
-          const hoverCtx = building.hoverCanvas.getContext('2d');
-          const selectedCtx = building.selectedCanvas.getContext('2d');
-
-          building.hitCanvas.width = building.hoverCanvas.width = building.selectedCanvas.width = this.width;
-          building.hitCanvas.height = building.hoverCanvas.height = building.selectedCanvas.height = this.height;
-
+          building.hitCanvas.width = this.width;
+          building.hitCanvas.height = this.height;
           hitCtx.drawImage(this, 0, 0);
-          hoverCtx.drawImage(this, 0, 0);
-          selectedCtx.drawImage(this, 0, 0);
-
-          hoverCtx.globalCompositeOperation = 'source-atop';
-          hoverCtx.fillStyle = 'rgba(0, 0, 0, 0.3)';
-          hoverCtx.fillRect(0, 0, this.width, this.height);
-          hoverCtx.globalCompositeOperation = 'source-over';
-
-          selectedCtx.globalCompositeOperation = 'source-atop';
-          selectedCtx.fillStyle = 'rgba(255, 0, 0, 0.5)';
-          selectedCtx.fillRect(0, 0, this.width, this.height);
-          selectedCtx.globalCompositeOperation = 'source-over';
-
           drawImage();
         };
         buildings[buildingData.svg] = building;
@@ -77,13 +82,14 @@ function drawImage() {
   
   for (const name in buildings) {
     const building = buildings[name];
+    ctx.save();
     if (name === selectedBuilding) {
-      ctx.drawImage(building.selectedCanvas, 0, 0);
+      ctx.filter = 'url(#selected-filter)';
     } else if (name === hoveringBuilding) {
-      ctx.drawImage(building.hoverCanvas, 0, 0);
-    } else {
-      ctx.drawImage(building.image, 0, 0);
+      ctx.filter = 'url(#hover-filter)';
     }
+    ctx.drawImage(building.image, 0, 0);
+    ctx.restore();
   }
   
   ctx.restore();
@@ -220,8 +226,8 @@ function setSelectedBuilding(building) {
 
 function deselectBuilding() {
   if (selectedBuilding) {
-      buildings[selectedBuilding].isSelected = false;
-      selectedBuilding = null;
-      drawImage();
+    buildings[selectedBuilding].isSelected = false;
+    selectedBuilding = null;
+    drawImage();
   }
 }
