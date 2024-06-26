@@ -1,10 +1,49 @@
+testData = {
+    "files": "buxton-hall",
+    "building": "Buxton Hall",
+    "address": "310 SW Weatherford Place",
+    "description": "",
+    "accessibility": "ENTRIES: corner of Weatherford Place and Jefferson Street. FLOORS: A floors; elevator. FACILITIES: wheelchair accessible.",
+    "brInfo": ""
+}
+
+setHighlightInfo(testData)
+
 function setHighlightInfo(building) {
     $('#infoTitle').html(building.building);
-    $('#infoAddress').html(building.address);
-    $('#infoDescription').html(building.description);
-    $('#infoSecondaryInfo').html(building.secondaryInfo);
-    $('#infoBrInfo').html(building.brInfo);
-    $('.buildingImg img').attr('src', `style/images/buildings/${building.image}`);
+    
+    if (building.address) {
+        $('#infoAddress').show();
+        $('#infoAddress a').attr('href', `https://www.google.com/maps/search/${building.address}, corvallis Oregon`).attr('target', '_blank').text(building.address);
+    } else {
+        $('#infoAddress').hide();
+    }
+
+    if (building.description) {
+        $('#infoDescription').show();
+        $('#infoDescription p').html(building.description);
+    } else {
+        $('#infoDescription').hide();
+    }
+
+    if (building.accessibility) {
+        $('#infoAccessibility').show();
+        $('#infoAccessibility p').html(building.accessibility);
+    } else {
+        $('#infoAccessibility').hide();
+    }
+
+    if (building.brInfo) {
+        $('#infoBrInfo').show();
+        $('#infoBrInfo p').html(building.brInfo);
+    } else {
+        $('#infoBrInfo').hide();
+    }
+
+    const imgSrc = `style/images/buildings/${building.files}.jpg`;
+    $('.buildingImg img').attr('src', imgSrc).on('error', function() {
+        $(this).attr('src', 'style/images/buildings/no-image.jpg');
+    });
     showHighlight();
 }
 

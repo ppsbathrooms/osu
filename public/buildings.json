@@ -1,92 +1,225 @@
 [
     {
-        "svg": "reeser",
+        "files": "reeser",
         "building": "Reser Stadium",
         "address": "700 SW 26th Street",
         "description": "",
-        "secondaryInfo": "Accessibility: ENTRIES: Northeast gate. FLOORS: Accessible seating.",
-        "brInfo": "13 gender inclusive restrooms in rooms: C0003, P0300A, P0301A, P0302A, P0303A, P0304A, P0305A , P0306A, P0307A3, P0308A, P0309A, P0311A, P0312A",
-        "image": "reser-stadium.jpg"
+        "accessibility": "ENTRIES: Northeast gate. FLOORS: Accessible seating.",
+        "brInfo": "13 gender inclusive restrooms in rooms: C0003, P0300A, P0301A, P0302A, P0303A, P0304A, P0305A , P0306A, P0307A3, P0308A, P0309A, P0311A, P0312A"
     },
     {
-        "svg": "valley-football",
+        "files": "valley-football",
         "building": "Valley Football Center",
         "address": "725 SW 30th Street",
         "description": "",
-        "secondaryInfo": "",
-        "brInfo": "1 gender inclusive restroom in room: 0225",
-        "image": "valley-football.jpg"
+        "accessibility": "",
+        "brInfo": "1 gender inclusive restroom in room: 0225"
     },
     {
-        "svg": "reeser-health",
+        "files": "reeser-health",
         "building": "SamCare Express Health Center",
         "address": "850 SW 26th St",
         "description": "",
-        "secondaryInfo": "",
-        "brInfo": "",
-        "image": "reeser-health.jpg"
+        "accessibility": "",
+        "brInfo": ""
     },
     {
-        "svg": "gill-coliseum",
+        "files": "gill-coliseum",
         "building": "Gill Coliseum",
         "address": "660 SW 26th Street",
         "description": "",
-        "secondaryInfo": "Accessibility: ENTRIES: Southwest corner entry: ramp up to main floor; West to entry: ramp to basement. FLOORS: All floors via ramps.",
-        "brInfo": "1 gender inclusive restroom in room: 0100",
-        "image": "gill-coliseum.jpg"
+        "accessibility": "ENTRIES: Southwest corner entry: ramp up to main floor; West to entry: ramp to basement. FLOORS: All floors via ramps.",
+        "brInfo": "1 gender inclusive restroom in room: 0100"
     },
     {
-        "svg": "wayne-performance",
+        "files": "wayne-performance",
         "building": "P. Wayne Valley Sports Performance Center",
         "address": "2737 SW Ralph Miller Lane",
         "description": "",
-        "secondaryInfo": "",
-        "brInfo": "7 gender inclusive restrooms in rooms: 0105, 0106, 0108M, 0109M, 0203, 0208M, 0209M",
-        "image": "sports-performance-center.jpg"
+        "accessibility": "",
+        "brInfo": "7 gender inclusive restrooms in rooms: 0105, 0106, 0108M, 0109M, 0203, 0208M, 0209M"
     },
     {
-        "svg": "truax-center",
+        "files": "truax-center",
         "building": "Merritt Truax Indoor Center",
         "address": "661 SW 30th Street",
         "description": "",
-        "secondaryInfo": "",
-        "brInfo": "",
-        "image": "truax-center.jpg"
+        "accessibility": "",
+        "brInfo": ""
     },
     {
-        "svg": "magruder-hall",
+        "files": "magruder-hall",
         "building": "Magruder Hall",
         "address": "700 SW 30th Street",
         "description": "",
-        "secondaryInfo": "Accessibility: ENTRIES: Northeast entry: level into 1st (face east). FLOORS: All floors; 2 elevators: one near main entry, one in south corridor.",
-        "brInfo": "8 gender inclusive restrooms in rooms: 0172A, 0173A, 0295, 0297, 1001, 1003, 2007, 2009",
-        "image": "magruder-hall.jpg"
+        "accessibility": "ENTRIES: Northeast entry: level into 1st (face east). FLOORS: All floors; 2 elevators: one near main entry, one in south corridor.",
+        "brInfo": "8 gender inclusive restrooms in rooms: 0172A, 0173A, 0295, 0297, 1001, 1003, 2007, 2009"
     },
     {
-        "svg": "sameritan-center",
+        "files": "sameritan-center",
         "building": "Samaritan Athletic Sports Medicine Center",
         "address": "845 SW 30th Street",
         "description": "",
-        "secondaryInfo": "",
-        "brInfo": "2 gender inclusive restrooms in rooms: 0106, 0211",
-        "image": "samaritan-medicine-center.jpg"
+        "accessibility": "",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0106, 0211"
     },
     {
-        "svg": "osu-parking",
+        "files": "osu-parking",
         "building": "OSU Parking",
         "address": "661 SW 26th Street",
         "description": "",
-        "secondaryInfo": "",
-        "brInfo": "",
-        "image": "parking-26th.jpg"
+        "accessibility": "",
+        "brInfo": ""
     },
     {
-        "svg": "beaver-store",
+        "files": "buoy-lab",
+        "building": "Oceanography Buoy Lab",
+        "address": "891 SW 30th Street",
+        "description": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "ocean-mixing",
+        "building": "Ocean Mixing Lab",
+        "address": "891 SW 30th Street",
+        "description": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "machine-tech-development",
+        "building": "CEOAS Machine and Technical Development",
+        "address": "891 SW 30th Street",
+        "description": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "cruise-staging",
+        "building": "Cruise and Expedition Staging",
+        "address": "4700 SW Research Way",
+        "description": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "coastal-oceanography",
+        "building": "Coastal Oceanography Lab",
+        "address": "891 SW 30th Street",
+        "description": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "marine-tech",
+        "building": "Marine Technician Building",
+        "address": "891 SW 30th Street",
+        "description": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "oceanography-instrumentation",
+        "building": "Oceanography Instrumentation Lab",
+        "address": "891 SW 30th Street",
+        "description": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "ch2m-alumni",
+        "building": "CH2M Hill Alumni Center",
+        "address": "725 SW 26th Street",
+        "description": "",
+        "accessibility": "ENTRIES: All. FLOORS: All.",
+        "brInfo": "1 gender inclusive restroom in room: 0107"
+    },
+    {
+        "files": "lasells-center",
+        "building": "LaSells Stewart Center",
+        "address": "875 SW 26th Street",
+        "description": "",
+        "accessibility": "ENTRIES: West ENTRIES: ramp up to courtyard; level entry into main floor. FLOORS: 1st floor: all areas accessible except Austin Auditorium balcony."
+    },
+    {
+        "files": "beth-ray",
+        "building": "Beth Ray Center For Academic Support",
+        "address": "671 SW 26th Street",
+        "description": "",
+        "accessibility": "",
+        "brInfo": "1 gender inclusive restroom in room: 0125"
+    },
+    {
+        "files": "cesar-chavez",
+        "building": "Centro Cultural Cesar Chavez",
+        "address": "691 SW 26th Street",
+        "description": "",
+        "accessibility": "",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0109, 0110"
+    },
+    {
+        "files": "tennis-pavilion",
+        "building": "Tennis Pavilion",
+        "address": "2801 SW Washington Way",
+        "description": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "maintenance-pavilion",
+        "building": "Outdoor Rec Maintenance Pavilion",
+        "address": "2781 SW Washington Way",
+        "description": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "cauthorn-hall",
+        "building": "Cauthorn Hall",
+        "address": "361 SW Sackett Place",
+        "description": "",
+        "accessibility": "ENTRIES: interior of the residence hall quad. FLOORS: All floors; elevator.",
+        "brInfo": ""
+    },
+    {
+        "files": "poling-hall",
+        "building": "Poling Hall",
+        "address": "260 SW Weatherford Place",
+        "description": "",
+        "accessibility": "ENTRIES: west entrance, off of Weatherford Place. FLOORS: all floors; elevator. FACILITIES: wheelchair accessible facilities.",
+        "brInfo": ""
+    },
+    {
+        "files": "buxton-hall",
+        "building": "Buxton Hall",
+        "address": "310 SW Weatherford Place",
+        "description": "",
+        "accessibility": "ENTRIES: corner of Weatherford Place and Jefferson Street. FLOORS: A floors; elevator. FACILITIES: wheelchair accessible.",
+        "brInfo": ""
+    },
+    {
+        "files": "hawley-hall",
+        "building": "Hawley Hall",
+        "address": "311 SW Sackett Place",
+        "description": "",
+        "accessibility": "ENTRIES: corner of Sackett Way and Jefferson Street. FLOORS: All floors; elevators. FACILITIES: wheelchair accessible.",
+        "brInfo": ""
+    },
+    {
+        "files": "weatherford-hall",
+        "building": "Weatherford Hall",
+        "address": "300 SW 26th Street",
+        "description": "",
+        "accessibility": "ENTRIES: west and east north facing entrances on the first floor, and an accessible entrance located on the west south facing ground floor. FLOORS: all floors; elevator. FACILITIES: wheelchair accessible.",
+        "brInfo": "4 gender inclusive restrooms in rooms: B100, D109, EG03, EG04"
+    },
+    {
+        "files": "beaver-store",
         "building": "OSU Beaver Store",
         "address": "663 SW 26th Street",
         "description": "",
-        "secondaryInfo": "",
-        "brInfo": "",
-        "image": "beaver-store.jpg"
+        "accessibility": "",
+        "brInfo": ""
     }
 ]

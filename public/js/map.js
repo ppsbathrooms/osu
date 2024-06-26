@@ -62,7 +62,7 @@ function loadBuildingsFromJSON() {
           data: buildingData,
           isSelected: false
         };
-        building.image.src = `/style/maps/osu/buildings/${buildingData.svg}.svg`;
+        building.image.src = `/style/maps/osu/buildings/${buildingData.files}.svg`;
         building.image.onload = function() {
           building.hitCanvas.width = this.width;
           building.hitCanvas.height = this.height;
@@ -71,7 +71,7 @@ function loadBuildingsFromJSON() {
           building.hitCtx.drawImage(this, 0, 0);
           drawImage();
         };
-        buildings[buildingData.svg] = building;
+        buildings[buildingData.files] = building;
       });
     })
     .catch(error => console.error('Error loading buildings:', error));
