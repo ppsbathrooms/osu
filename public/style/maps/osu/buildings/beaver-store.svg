@@ -5,8 +5,8 @@
    viewBox="0 0 939 714"
    version="1.2"
    id="svg9750"
-   sodipodi:docname="osu-base.svg"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="beaver-store.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
    inkscape:export-filename="buildings\magruder-hall.svg"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -25,18 +25,18 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      inkscape:zoom="2"
-     inkscape:cx="505.25"
-     inkscape:cy="678.25"
-     inkscape:window-width="1920"
-     inkscape:window-height="1057"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:cx="718"
+     inkscape:cy="665.5"
+     inkscape:window-width="1312"
+     inkscape:window-height="891"
+     inkscape:window-x="0"
+     inkscape:window-y="37"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg9750" />
   <defs
      id="defs1612" />
   <path
-     style="fill:#d9cfc7;fill-opacity:1;fill-rule:evenodd;stroke:#b8a89c;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+     style="fill:#566c8c;fill-opacity:1;fill-rule:evenodd;stroke:#566c8c;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
      d="m 529.92187,448.55469 0.16407,32.23828 2.14062,2.11719 h 1.95701 l -0.0117,-41.05483 -4.14062,0.0195 0.0234,4.59375 h 0.57422 l 0.008,2.08203 z"
      id="path2219"
      sodipodi:nodetypes="cccccccccc" />

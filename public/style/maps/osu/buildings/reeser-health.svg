@@ -5,8 +5,8 @@
    viewBox="0 0 939 714"
    version="1.2"
    id="svg9750"
-   sodipodi:docname="osu-base.svg"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="reeser-health.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
    inkscape:export-filename="buildings\valley-football.svg"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -25,18 +25,18 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      inkscape:zoom="5.6568542"
-     inkscape:cx="598.30073"
-     inkscape:cy="709.49327"
-     inkscape:window-width="1920"
-     inkscape:window-height="1057"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:cx="793.72737"
+     inkscape:cy="861.7864"
+     inkscape:window-width="1312"
+     inkscape:window-height="449"
+     inkscape:window-x="0"
+     inkscape:window-y="37"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg9750" />
   <defs
      id="defs1612" />
   <path
-     style="fill:#d9cfc7;fill-opacity:1;fill-rule:evenodd;stroke:#b8a89c;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+     style="fill:#566c8c;fill-opacity:1;fill-rule:evenodd;stroke:#566c8c;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
      d="m 507.22656,568.54297 2.15235,2.20312 -0.31641,1.69532 6,1.16015 0.22266,-1.23437 2.33593,0.36718 -0.30078,-11.57812 0.26563,-1.47266 -3.12891,-0.66797 -0.0664,0.17969 -5.04687,-1.04687 z m 0,0"
      id="path2383" />
 </svg>

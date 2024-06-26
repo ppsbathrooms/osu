@@ -14,30 +14,32 @@ let scale = 1;
 let rafId = null;
 let hoveringBuilding = null;
 
-// svg filters for hover and selection
+// svg filters for hover and select
 const svgFilters = `
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
     <filter id="hover-filter">
       <feColorMatrix type="matrix" values="
-        0.7 0 0 0 0
-        0 0.7 0 0 0
-        0 0 0.7 0 0
+        1.25 0 0 0 0
+        0 1.25 0 0 0
+        0 0 1.25 0 0
         0 0 0 1 0
       "/>
     </filter>
     <filter id="selected-filter">
       <feColorMatrix type="matrix" values="
-        1 0 0 0 0.5
-        0 0.5 0 0 0
-        0 0 0.5 0 0
+        1.5 0 0 0 0
+        0 1.5 0 0 0
+        0 0 2 0 0
         0 0 0 1 0
       "/>
     </filter>
   </svg>
 `;
 
+
 document.body.insertAdjacentHTML('afterbegin', svgFilters);
 
+// canvas to window size and center
 baseMap.onload = function() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -56,15 +58,17 @@ function loadBuildingsFromJSON() {
         const building = {
           image: new Image(),
           hitCanvas: document.createElement('canvas'),
+          hitCtx: null,
           data: buildingData,
           isSelected: false
         };
         building.image.src = `/style/maps/osu/buildings/${buildingData.svg}.svg`;
         building.image.onload = function() {
-          const hitCtx = building.hitCanvas.getContext('2d', { willReadFrequently: true });
           building.hitCanvas.width = this.width;
           building.hitCanvas.height = this.height;
-          hitCtx.drawImage(this, 0, 0);
+          // hit detection for each canvas
+          building.hitCtx = building.hitCanvas.getContext('2d', { willReadFrequently: true });
+          building.hitCtx.drawImage(this, 0, 0);
           drawImage();
         };
         buildings[buildingData.svg] = building;
@@ -76,10 +80,12 @@ function loadBuildingsFromJSON() {
 function drawImage() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.save();
+  // zoom and pan offsets
   ctx.translate(offsetX, offsetY);
   ctx.scale(scale, scale);
   ctx.drawImage(baseMap, 0, 0);
   
+  // draws buildings and applies filters
   for (const name in buildings) {
     const building = buildings[name];
     ctx.save();
@@ -95,11 +101,13 @@ function drawImage() {
   ctx.restore();
 }
 
+// update map position when dragging
 function updatePosition(e) {
   offsetX = e.clientX - startX;
   offsetY = e.clientY - startY;
 }
 
+// animate frame while dragging
 function animateFrame() {
   drawImage();
   if (isDragging) {
@@ -115,20 +123,22 @@ function stopDragging() {
   }
 }
 
+// calc if point is on building
 function isPointOnBuilding(x, y) {
   for (const name in buildings) {
     const building = buildings[name];
     if (x >= 0 && x < building.image.width && y >= 0 && y < building.image.height) {
-      const hitCtx = building.hitCanvas.getContext('2d');
-      const pixelData = hitCtx.getImageData(x, y, 1, 1).data;
-      if (pixelData[3] > 0) {
-        return name;
+      if (building.hitCtx) {
+        const pixelData = building.hitCtx.getImageData(x, y, 1, 1).data;
+        if (pixelData[3] > 0) {
+          return name;
+        }
       }
     }
   }
   return null;
 }
-
+// draggin start
 canvas.addEventListener('mousedown', function(e) {
   isDragging = true;
   startX = e.clientX - offsetX;
@@ -137,6 +147,7 @@ canvas.addEventListener('mousedown', function(e) {
   canvas.style.cursor = 'move';
 });
 
+// draggin move
 canvas.addEventListener('mousemove', function(e) {
   if (isDragging) {
     updatePosition(e);
@@ -167,6 +178,7 @@ canvas.addEventListener('mouseleave', function() {
   drawImage();
 });
 
+// zoomin
 canvas.addEventListener('wheel', function(e) {
   e.preventDefault();
   const rect = canvas.getBoundingClientRect();
@@ -182,6 +194,7 @@ canvas.addEventListener('wheel', function(e) {
 
     scale = newScale;
 
+    // zoom towards mouse
     offsetX = mouseX - imgX * scale;
     offsetY = mouseY - imgY * scale;
 
@@ -195,6 +208,7 @@ window.addEventListener('resize', function() {
   drawImage();
 });
 
+// clickin
 canvas.addEventListener('click', function(e) {
   const rect = canvas.getBoundingClientRect();
   const clickX = (e.clientX - rect.left - offsetX) / scale;
@@ -210,6 +224,7 @@ canvas.addEventListener('click', function(e) {
   }
 });
 
+// set selection for building
 function setSelectedBuilding(building) {
   if(building == null) {
     return;
@@ -224,6 +239,7 @@ function setSelectedBuilding(building) {
   drawImage();
 }
 
+// deselect current building
 function deselectBuilding() {
   if (selectedBuilding) {
     buildings[selectedBuilding].isSelected = false;
