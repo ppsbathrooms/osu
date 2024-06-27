@@ -15,7 +15,7 @@ function setHighlightInfo(building) {
         $img: $('.buildingImg img'),
         $title: $('#infoTitle'),
         $address: $('#infoAddress'),
-        $description: $('#infoDescription'),
+        $info: $('#infoInfo'),
         $accessibility: $('#infoAccessibility'),
         $brInfo: $('#infoBrInfo'),
         $highlightInfo: $('#highlightInfo')
@@ -50,7 +50,7 @@ function setBackgroundColor(img, $highlightInfo) {
 function updateInfo(building, elements) {
     elements.$title.html(building.building);
     toggleElement(elements.$address, building.address, true);
-    toggleElement(elements.$description, building.description);
+    toggleElement(elements.$info, building.info);
     toggleElement(elements.$accessibility, building.accessibility);
     toggleElement(elements.$brInfo, building.brInfo);
 }

@@ -3,7 +3,7 @@
         "files": "reeser",
         "building": "Reser Stadium",
         "address": "700 SW 26th Street",
-        "description": "",
+        "info": "",
         "accessibility": "ENTRIES: Northeast gate. FLOORS: Accessible seating.",
         "brInfo": "13 gender inclusive restrooms in rooms: C0003, P0300A, P0301A, P0302A, P0303A, P0304A, P0305A , P0306A, P0307A3, P0308A, P0309A, P0311A, P0312A"
     },
@@ -11,7 +11,7 @@
         "files": "valley-football",
         "building": "Valley Football Center",
         "address": "725 SW 30th Street",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": "1 gender inclusive restroom in room: 0225"
     },
@@ -19,7 +19,7 @@
         "files": "reeser-health",
         "building": "SamCare Express Health Center",
         "address": "850 SW 26th St",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": ""
     },
@@ -27,7 +27,7 @@
         "files": "gill-coliseum",
         "building": "Gill Coliseum",
         "address": "660 SW 26th Street",
-        "description": "",
+        "info": "",
         "accessibility": "ENTRIES: Southwest corner entry: ramp up to main floor; West to entry: ramp to basement. FLOORS: All floors via ramps.",
         "brInfo": "1 gender inclusive restroom in room: 0100"
     },
@@ -35,7 +35,7 @@
         "files": "wayne-performance",
         "building": "P. Wayne Valley Sports Performance Center",
         "address": "2737 SW Ralph Miller Lane",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": "7 gender inclusive restrooms in rooms: 0105, 0106, 0108M, 0109M, 0203, 0208M, 0209M"
     },
@@ -43,7 +43,7 @@
         "files": "truax-center",
         "building": "Merritt Truax Indoor Center",
         "address": "661 SW 30th Street",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": ""
     },
@@ -51,15 +51,1351 @@
         "files": "magruder-hall",
         "building": "Magruder Hall",
         "address": "700 SW 30th Street",
-        "description": "",
+        "info": "",
         "accessibility": "ENTRIES: Northeast entry: level into 1st (face east). FLOORS: All floors; 2 elevators: one near main entry, one in south corridor.",
         "brInfo": "8 gender inclusive restrooms in rooms: 0172A, 0173A, 0295, 0297, 1001, 1003, 2007, 2009"
+    },
+    {
+        "files": "pole-barn",
+        "building": "Pole Barn",
+        "address": "3250 SW Washington Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "vet-horse",
+        "building": "Vet Horse Barn",
+        "address": "3250 SW Washington Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "vet-sheep",
+        "building": "Vet Sheep Barn",
+        "address": "700 SW 30th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "maintenance-center",
+        "building": "UHDS Maintenance Center",
+        "address": "601 SW 35th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "emmerson-wood",
+        "building": "A.A Red Emmerson Advanced Wood Products Laboratory",
+        "address": "3205 SW Washington Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0141, 0142"
+    },
+    {
+        "files": "vet-dairy",
+        "building": "Vet Dairy Barn",
+        "address": "3201 SW Washington Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "vet-dairy-manure",
+        "building": "Manure Shed",
+        "address": "3201 SW Washington Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "animal-resources-center",
+        "building": "Lab Animal Resources Center",
+        "address": "3151 SW Washington Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "vet-research",
+        "building": "Vet Research Lab",
+        "address": "3101 SW Washington Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "dryden-hall",
+        "building": "Dryden Hall",
+        "address": "450 SW 30th Street",
+        "info": "",
+        "accessibility": "ENTRIES: West entry: ramp up to 1st floor. FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": ""
+    },
+    {
+        "files": "richardson-hall",
+        "building": "Richardson Hall",
+        "address": "3180 SW Jefferson Way",
+        "info": "",
+        "accessibility": "ENTRIES: North, West and Courtyard entries; automatic doors. FLOORS: All floors; elevator (Braille controls); First and Second floor: chair lift to Peavy hallways.",
+        "brInfo": "1 gender inclusive restroom in room: 0007, 0103, 0203"
+    },
+    {
+        "files": "forest-science-center",
+        "building": "George W. Peavy Forest Science Center",
+        "address": "3100 SW Jefferson Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "4 gender inclusive restrooms in rooms: B09, 126, 233, 234"
+    },
+    {
+        "files": "forestry-science-lab",
+        "building": "USDA Forestry Sciences Lab",
+        "address": "3200 SW Jefferson Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "energy-center",
+        "building": "Energy Center",
+        "address": "3452 SW Jefferson Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "hinsdale-wave",
+        "building": "Hinsdale Wave Research Lab",
+        "address": "3550 SW Jefferson Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "plant-whse-1",
+        "building": "Physical Plant Whse 1",
+        "address": "Physical Plant Whse 1",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "plant-whse-2",
+        "building": "Physical Plant Whse 2",
+        "address": "Physical Plant Whse 2",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "biological-curation",
+        "building": "Biological Curation",
+        "address": "3452 SW Jefferson Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "jefferson-street",
+        "building": "Jefferson Street Building",
+        "address": "3731 SW Jefferson",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "epa-research",
+        "building": "EPA Environmental Research",
+        "address": "200 SW 35th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "rabbit-research-1",
+        "building": "Rabbit Research Lab I",
+        "address": "3640 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "rabbit-research-2",
+        "building": "Rabbit Research Lab II",
+        "address": "3660 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "farm-equip-1",
+        "building": "Farm Service Equip Storage 1",
+        "address": "3590 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "farm-equip-2",
+        "building": "Farm Service Equip Storage 2",
+        "address": "3600 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "chemical-storage",
+        "building": "Chemical Storage",
+        "address": "3566 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "farm-service",
+        "building": "Farm Service",
+        "address": "3564 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "feeding-shelter-1",
+        "building": "Feeding Shelter 1",
+        "address": "",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "feeding-shelter-2",
+        "building": "Feeding Shelter 2",
+        "address": "",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "cw-hay-bedding",
+        "building": "CW Hay Bedding",
+        "address": "3565 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "hogg-metabolism",
+        "building": "Hogg Animal Metabolism Laboratory",
+        "address": "3547 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "commodity-storage",
+        "building": "Commodity Storage Facility",
+        "address": "35th and Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "oldfield-animal-teaching",
+        "building": "James E. Oldfield Animal Teaching Facility",
+        "address": "3521 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "feed-center",
+        "building": "Feed Center",
+        "address": "3570 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "beef-pole-barn",
+        "building": "Beef Pole Barn",
+        "address": "3550 Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "feed-barn",
+        "building": "Feed Barn",
+        "address": "3550 Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "animal-phys-lab",
+        "building": "Feed Barn",
+        "address": "3550 Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "precision-agg-systems",
+        "building": "Precision Agricultural Systems Ctr",
+        "address": "3565 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-hall",
+        "building": "West Hall",
+        "address": "391 SW 30th Street",
+        "info": "",
+        "accessibility": "ENTRIES: West and east facing entrances. FLOORS: all floors; elevator.",
+        "brInfo": ""
+    },
+    {
+        "files": "reed-lodge",
+        "building": "Reed Lodge",
+        "address": "2950 SW Jefferson Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "1 gender inclusive restroom in room: 311"
+    },
+    {
+        "files": "heckart-lodge",
+        "building": "Heckart Lodge",
+        "address": "2900 SW Jefferson Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "2 gender inclusive restrooms in rooms: 102, 304"
+    },
+    {
+        "files": "marketplace-west-dining",
+        "building": "Marketplace West Dining Center",
+        "address": "351 SW 30th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "sackett-hall",
+        "building": "Sackett Hall",
+        "address": "2901 SW Jefferson Way",
+        "info": "",
+        "accessibility": "ENTRIES: north side of the building, located near the parking area. FACILITIES: wheelchair accessible; No elevator.",
+        "brInfo": ""
+    },
+    {
+        "files": "austin-hall",
+        "building": "Austin Hall",
+        "address": "2751 SW Jefferson Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0191, 0193"
+    },
+    {
+        "files": "asian-pacific-center",
+        "building": "Asian & Pacific Cultural Center",
+        "address": "2695 SW Jefferson Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0113, 0114"
+    },
+    {
+        "files": "fairbanks-hall",
+        "building": "Fairbanks Hall",
+        "address": "220 SW 26th Street",
+        "info": "",
+        "accessibility": "ENTRIES: East entry: ramps up to first floor. FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": "1 gender inclusive restroom in room: 144"
+    },
+    {
+        "files": "learning-innovation",
+        "building": "Learning Innovation Center",
+        "address": "165 SW Sackett Place",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "4 gender inclusive restrooms in rooms: 0173, 0273, 0373, M0173"
+    },
+    {
+        "files": "womens-building",
+        "building": "Women's Building",
+        "address": "160 SW 26th Street",
+        "info": "",
+        "accessibility": "ENTRIES: West entry: level to basement; North entry: down into basement. FLOORS: All floors; (elevators).",
+        "brInfo": ""
+    },
+    {
+        "files": "nash-hall",
+        "building": "Nash Hall",
+        "address": "2820 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: Northeast entry: level to 1st (hvy doors). FLOORS: All floors; elevator (no Braille).",
+        "brInfo": ""
+    },
+    {
+        "files": "agg-life",
+        "building": "Agricultural & Life Sciences Building ",
+        "address": "2750 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "8 gender inclusive restrooms in rooms: 1078A, 1078B, 2078A, 2078B, 3086, 3086A, 4078, 4078A"
+    },
+    {
+        "files": "hovland-hall",
+        "building": "Hovland Hall",
+        "address": "2700 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: South entry to west corridor. FLOORS: West Corridor only.",
+        "brInfo": "4 gender inclusive restrooms in rooms: 0007, 0105, 0105A, 0201"
+    },
+    {
+        "files": "gilmore-annex",
+        "building": "Gilmore Annex",
+        "address": "2650 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "gilmore-hall",
+        "building": "Gilmore Hall",
+        "address": "124 SW 26th Street",
+        "info": "",
+        "accessibility": "ENTRIES: None; one step up to 1st floor (east entry). FLOORS: None; no elevator to 2nd.",
+        "brInfo": ""
+    },
+    {
+        "files": "pauling-science",
+        "building": "Linus Pauling Science Center",
+        "address": "2900 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "1 gender inclusive restroom in room: 0137"
+    },
+    {
+        "files": "withycombe-hall",
+        "building": "Withycombe Hall",
+        "address": "2921 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: South entry: ramp up to 1st floor. FLOORS: All floors in west wing; elevator (Braille controls).",
+        "brInfo": "5 gender inclusive restrooms in rooms: 0071, 0123, 0167A, 0307, 0169"
+    },
+    {
+        "files": "east-greenhouse",
+        "building": "East Greenhouse",
+        "address": "2801 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0123, 0124"
+    },
+    {
+        "files": "north-utility",
+        "building": "North District Utility Plant",
+        "address": "2801 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "cordley-hall",
+        "building": "Cordley Hall",
+        "address": "2701 SW Campus Way",
+        "info": "Oregon State University Herbarium",
+        "accessibility": "ENTRIES: East entry: level to 1st floor. FLOORS: All floors; 2 elevators (no Braille).",
+        "brInfo": "8 gender inclusive restrooms in rooms: 1124, 1500, 2124, 2500, 3124, 3500, 4124, 4500"
+    },
+    {
+        "files": "bates-hall",
+        "building": "Bates Hall",
+        "address": "110 SW 26th Street",
+        "info": "OSU Child Development Center",
+        "accessibility": "ENTRIES: East entry. FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": ""
+    },
+    {
+        "files": "ford-center",
+        "building": "Hallie E. Ford Center",
+        "address": "2631 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "5 gender inclusive restrooms in rooms: 0135, 0234, 0237, 0334, 0337"
+    },
+    {
+        "files": "ballard-extension",
+        "building": "Ballard Extension Hall",
+        "address": "2591 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: Northeast entry: ramp to 1st. FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": ""
+    },
+    {
+        "files": "johnson-hall",
+        "building": "Johnson Hall",
+        "address": "105 SW 26th Street",
+        "info": "",
+        "accessibility": "ENTRIES: Northeast entry: ramp to 1st. FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": ""
+    },
+    {
+        "files": "kelly-engineering",
+        "building": "Kelley Engineering Center",
+        "address": "110 SW Park Terrace",
+        "info": "",
+        "accessibility": "Kelley Engineering Center has a lactation room which is available for reservation for nursing mothers. Reservations can be made at the EECS front desk 541-737-3617",
+        "brInfo": ""
+    },
+    {
+        "files": "plageman-health",
+        "building": "Plageman Student Health Center",
+        "address": "108 SW Memorial Place",
+        "info": "",
+        "accessibility": "ENTRIES: North entry of north wing: ramp down to 1st (basement). FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": "5 gender inclusive restrooms in rooms: 0120, 0109B, 0200J, 0206B, 0310A"
+    },
+    {
+        "files": "harris-black-center",
+        "building": "Harris Black Cultural Center",
+        "address": "2320 SW Monroe Avenue",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0106, 0114"
+    },
+    {
+        "files": "dawes-house",
+        "building": "Dawes House",
+        "address": "2550 SW Monroe Avenue",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "1 gender inclusive restroom in room: 0024"
+    },
+    {
+        "files": "eoa-science",
+        "building": "EOA Sciences Admin Building",
+        "address": "101 SW 26th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "1 gender inclusive restroom in room: 0110"
+    },
+    {
+        "files": "wilkinson-hall",
+        "building": "Wilkinson Hall",
+        "address": "2601 SW Orchard Avenue",
+        "info": "",
+        "accessibility": "Gilfillan Auditorium: ENTRIES: South entry. FLOORS: Auditorium accessible. Wilkinson Hall: ENTRIES: East entry: ramp up to 1st floor level. FLOORS: All floors; elevator (no Braille).",
+        "brInfo": "1 gender inclusive restroom in room: 0030, 0110A"
+    },
+    {
+        "files": "burt-hall",
+        "building": "Burt Hall",
+        "address": "2651 SW Orchard Avenue",
+        "info": "",
+        "accessibility": "ENTRIES: South entry: level to 1st floor; West entry: level to 1st floor; East entry: level to 1st floor. FLOORS: All floors; 2 elevators (no Braille).",
+        "brInfo": "4 gender inclusive restrooms in rooms: 0160, 0264, 0290B, 0290C, 0364"
+    },
+    {
+        "files": "einerson-house",
+        "building": "Einerson House",
+        "address": "2638 NW Jackson Ave",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "wiegand-hall",
+        "building": "Wiegand Hall",
+        "address": "3051 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: East entry: pushbutton electric door to 1st floor. FLOORS: 1st only; (elevators).",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse",
+        "building": "West Greenhouse",
+        "address": "3291 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "1 gender inclusive restroom in room: 1225"
+    },
+    {
+        "files": "west-greenhouse-1",
+        "building": "West Greenhouse 1",
+        "address": "1 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-2",
+        "building": "West Greenhouse 2",
+        "address": "2 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-3",
+        "building": "West Greenhouse 3",
+        "address": "3 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-4",
+        "building": "West Greenhouse 4",
+        "address": "4 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-5",
+        "building": "West Greenhouse 5",
+        "address": "5 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-6",
+        "building": "West Greenhouse 6",
+        "address": "6 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-7",
+        "building": "West Greenhouse 7",
+        "address": "7 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-8",
+        "building": "West Greenhouse 8",
+        "address": "8 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-9",
+        "building": "West Greenhouse 9",
+        "address": "9 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-10",
+        "building": "West Greenhouse 10",
+        "address": "10 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-11",
+        "building": "West Greenhouse 11",
+        "address": "11 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-12",
+        "building": "West Greenhouse 12",
+        "address": "12 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-13",
+        "building": "West Greenhouse 13",
+        "address": "13 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-14",
+        "building": "West Greenhouse 14",
+        "address": "14 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-15",
+        "building": "West Greenhouse 15",
+        "address": "15 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-16",
+        "building": "West Greenhouse 16",
+        "address": "16 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-17",
+        "building": "West Greenhouse 17",
+        "address": "17 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-18",
+        "building": "West Greenhouse 18",
+        "address": "18 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-19",
+        "building": "West Greenhouse 19",
+        "address": "19 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-20",
+        "building": "West Greenhouse 20",
+        "address": "20 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-21",
+        "building": "West Greenhouse 21",
+        "address": "21 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "crops-research",
+        "building": "FED - USDA Horticultural Crops Research Lab",
+        "address": "3420 NW Orchard Avenue",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-glass",
+        "building": "West Greenhouse Glass",
+        "address": "",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "west-greenhouse-seeds",
+        "building": "Seed Laboratory",
+        "address": "3291 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0103, 0104"
+    },
+    {
+        "files": "mu",
+        "building": "Memorial Union",
+        "address": "2501 SW Jefferson Way",
+        "info": "",
+        "accessibility": "ENTRIES: South entry North entry: ramps up to mezzanine. FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": "3 gender inclusive restrooms in rooms: 0053, 0065, 0015"
+    },
+    {
+        "files": "milam-hall",
+        "building": "Milam Hall",
+        "address": "2520 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: North entry, ramp down to basement, Level entry into Milam Auditorium through west; outside doors or through basement of Milam Hall. FLOORS: All floors, elevator (Braille controls).",
+        "brInfo": "4 gender inclusive restrooms in rooms: 0021, 0028A, 0028B, 0106A"
+    },
+    {
+        "files": "moreland-hall",
+        "building": "Moreland Hall",
+        "address": "2550 SW Jefferson Way",
+        "info": "",
+        "accessibility": "ENTRIES: South entry: ramp down to 1st (basement). FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0146, 0120C"
+    },
+    {
+        "files": "kaku-ixt-mana-ina-haws",
+        "building": "Kaku-ixt Mana Ina Haws",
+        "address": "311 SW 26th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "1 gender inclusive restroom in room: 0103"
+    },
+    {
+        "files": "dixon-rec",
+        "building": "Dixon Recreation Center",
+        "address": "425 SW 26th Street",
+        "info": "",
+        "accessibility": "ENTRIES: North entry: ramp up to main floor. FLOORS: All floors; elevator (no Braille).",
+        "brInfo": "1 gender inclusive restroom in room: 0109A"
+    },
+    {
+        "files": "goss-stadium",
+        "building": "Goss Stadium",
+        "address": "430 SW Langton Place",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "4 gender inclusive restrooms in rooms: 0159, 0162, A0208, AM0211"
+    },
+    {
+        "files": "waldo-hall",
+        "building": "Waldo Hall",
+        "address": "2250 SW Jefferson Way",
+        "info": "",
+        "accessibility": "ENTRIES: East entry: level to 1st floor (interior ramps down). FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0142, 0121A"
+    },
+    {
+        "files": "snell-hall",
+        "building": "Snell Hall",
+        "address": "2150 SW Jefferson Way",
+        "info": "",
+        "accessibility": "ENTRIES: North entry: automatic doors to 1st. FLOORS: All floors; elevators (Braille controls).",
+        "brInfo": "12 gender inclusive restrooms in rooms: 0143, 0215, 0312C, 0339A, 0412D, 0432A, 0432B, 0510B, 0510C, 0510D, 0522A, 0522B"
+    },
+    {
+        "files": "langton-hall",
+        "building": "Langton Hall",
+        "address": "2450 SW Jefferson Way",
+        "info": "",
+        "accessibility": "ENTRIES: Northeast entry: ramp up to 1st floor; Southwest entry: level to basement. FLOORS: Parts of 1st and basement; no elevator; 2nd, 3rd floor inaccessible.",
+        "brInfo": ""
+    },
+    {
+        "files": "alexander-fieldhouse",
+        "building": "McAlexander Fieldhouse",
+        "address": "1800 SW Jefferson Way",
+        "info": "",
+        "accessibility": "ENTRIES: Level entries on east and west sides of main area. FLOORS: 1st floor only; 2nd floor inaccessible.",
+        "brInfo": "1 gender inclusive restroom in room: 0120"
+    },
+    {
+        "files": "plant-heating",
+        "building": "Physical Plant Heating Plant",
+        "address": "501 Benton Place",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "creative-arts-center",
+        "building": "Patricia Valian Reser Center for Creative Arts",
+        "address": "470 SW 15th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "kerr",
+        "building": "Kerr Administration Building",
+        "address": "1500 SW Jefferson Ave",
+        "info": "",
+        "accessibility": "ENTRIES: North entry: power-assisted doors; South: ramp to 1st (heavy doors); East: automatic door to 1st floor power-assisted. FLOORS: All floors; 2 elevators (no Braille controls).",
+        "brInfo": "1 gender inclusive restroom in room: B0112"
+    },
+    {
+        "files": "callahan-hall",
+        "building": "Callahan Hall",
+        "address": "1420 SW Jefferson Avenue",
+        "info": "",
+        "accessibility": "ENTRIES: north and south main entrances of the building. FLOORS: All floors; elevator.",
+        "brInfo": ""
+    },
+    {
+        "files": "mcnary-hall",
+        "building": "McNary Hall",
+        "address": "1220 SW Jefferson Way",
+        "info": "",
+        "accessibility": "ENTRIES: west entrance, near McNary Dining Center. FLOORS: All floors; elevator. FACILITIES: wheelchair accessible.",
+        "brInfo": ""
+    },
+    {
+        "files": "mcnary-dining",
+        "building": "McNary Dining",
+        "address": "1300 SW Jefferson Ave",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "2 gender inclusive restrooms in rooms: 109, 110"
+    },
+    {
+        "files": "wilson-hall",
+        "building": "Wilson Hall",
+        "address": "1351 SW Adams Avenue",
+        "info": "",
+        "accessibility": "ENTRIES: south entrance, and the west entrance located next to McNary Dining Center. FLOORS: all floors; elevator.",
+        "brInfo": ""
+    },
+    {
+        "files": "tebeau-hall",
+        "building": "Tebeau Hall",
+        "address": "1351 SW Washington Avenue",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "child-care",
+        "building": "Child Care Center",
+        "address": "1262 SW Adams Avenue",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "student-experience",
+        "building": "Student Experience Center",
+        "address": "2251 SW Jefferson Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "5 gender inclusive restrooms in rooms: 0003, 0119, 0219, 0319,0419"
+    },
+    {
+        "files": "strand-hall",
+        "building": "Strand Agriculture Hall",
+        "address": "170 SW Waldo Place",
+        "info": "",
+        "accessibility": "ENTRIES: East entry: long ramp to 1st floor. FLOORS: All floors except 4th; elevator (Braille controls).",
+        "brInfo": "7 gender inclusive restrooms in rooms: 0059B, 0115B, 0159B, 0215B, 0259B, 0315B, 0359B"
+    },
+    {
+        "files": "gilkey-hall",
+        "building": "Gilkey Hall",
+        "address": "122 SW Waldo Place",
+        "info": "",
+        "accessibility": "ENTRIES: East entry: ramp to 1st floor. FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": ""
+    },
+    {
+        "files": "bexell-hall",
+        "building": "Bexell Hall",
+        "address": "2251 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: South entry: ramp down to 1st floor (basement). FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": "1 gender inclusive restroom in room: 0210"
+    },
+    {
+        "files": "weniger-hall",
+        "building": "Weniger Hall",
+        "address": "103 SW Memorial Place",
+        "info": "",
+        "accessibility": "ENTRIES: Southwest entry: pushbutton electric door, level entry to 1st floor east elevator (needs key). FLOORS: All floors; west elevator (no Braille).",
+        "brInfo": "1 gender inclusive restroom in room: 605"
+    },
+    {
+        "files": "gilbert-hall",
+        "building": "Gilbert Hall",
+        "address": "2100 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: East entry: ramp down to basement from Monroe street sidewalk. FLOORS: All floors; elevator (no Braille).",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0121, 0221"
+    },
+    {
+        "files": "gilbert-hall-add",
+        "building": "Gilbert Hall Addition",
+        "address": "2101 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: South entry: level into main lobby. FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": ""
+    },
+    {
+        "files": "gleeson-hall",
+        "building": "Gleeson Hall",
+        "address": "2115 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: West entry: chairlift up to porch. FLOORS: 1st floor only; Freight elevator with heavy gate (no Braille).",
+        "brInfo": ""
+    },
+    {
+        "files": "shepard-hall",
+        "building": "Shepard Hall",
+        "address": "2001 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "1 gender inclusive restroom in room: 0208A"
+    },
+    {
+        "files": "dearborn-hall",
+        "building": "Dearborn Hall",
+        "address": "1891 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: Northwest entry: level to 1st floor. FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": ""
+    },
+    {
+        "files": "rogers-hall",
+        "building": "Rogers Hall",
+        "address": "2000 SW Monroe Avenue",
+        "info": "",
+        "accessibility": "ENTRIES: West entry: to 2nd floor; East entry: down service ramp to 1st. FLOORS: All floors; elevator (no Braille).",
+        "brInfo": "1 gender inclusive restroom in room: 0220"
+    },
+    {
+        "files": "batcheller-hall",
+        "building": "Batcheller Hall",
+        "address": "1791 Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: None; Use Covell north entry, Covell elevator and connecting corridors. FLOORS: 1st 2nd, 3rd via Covell 4th inaccessible.",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0146, 0259"
+    },
+    {
+        "files": "covell-hall",
+        "building": "Covell Hall",
+        "address": "1691 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: North entry: level to 1st floor. FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": "1 gender inclusive restroom in room: 214B"
+    },
+    {
+        "files": "graf-hall",
+        "building": "Graf Hall",
+        "address": "1680 SW Monroe Avenue",
+        "info": "",
+        "accessibility": "ENTRIES: South entry: level to 1st floor. FLOORS: 1st floor only; 2nd and 3rd accessible via Rogerselevator and sky bridges.",
+        "brInfo": "5 gender inclusive restrooms in rooms: 202, 203, 204, 305, 306"
+    },
+    {
+        "files": "gem",
+        "building": "The Gem",
+        "address": "155 NW Kings Boulevard",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "merryfield-hall",
+        "building": "Merryfield Hall",
+        "address": "1600 SW Monroe Ave",
+        "info": "",
+        "accessibility": "ENTRIES: Southeast entry: level to 1st floor. FLOORS: All floors; elevator (no Braille).",
+        "brInfo": "6 gender inclusive restrooms in rooms: 0101, 0116, 0118, 0119, 120, 200, 201"
+    },
+    {
+        "files": "owen-hall",
+        "building": "Owen Hall",
+        "address": "1501 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: South entry to main lobby; level entry with power-assisted doors. FLOORS: All floors; elevator (no Braille).",
+        "brInfo": ""
+    },
+    {
+        "files": "kearney-hall",
+        "building": "Kearney Hall",
+        "address": "1491 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: East entry w/ ramp and west entry. FLOORS: All floors; elevator; Floors 2 and 3 from Owen via sky bridges.",
+        "brInfo": ""
+    },
+    {
+        "files": "kidder-hall",
+        "building": "Kidder Hall",
+        "address": "2000 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: South entry: ramp up to 1st floor. FLOORS: All floors; elevator (Braille controls) and ramps",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0208, 0316"
+    },
+    {
+        "files": "milne-center",
+        "building": "Milne Computer Center",
+        "address": "1800 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: Southeast entry: ramp up to 2nd floor, automatic door. FLOORS: All floors; elevator (no Braille).",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0113, 0116"
+    },
+    {
+        "files": "valley-library",
+        "building": "The Valley Library",
+        "address": "201 SW Waldo Place",
+        "info": "",
+        "accessibility": "ENTRIES: North entry: level to 2nd floor. FLOORS: All floors; elevator; access north section power-assisted doors of 1st through Reserve Book staff area.",
+        "brInfo": "3 gender inclusive restrooms in rooms: 1565, 2566, 2569,3565, 5565"
+    },
+    {
+        "files": "valley-center",
+        "building": "Gladys Valley Center",
+        "address": "1701 SW Jefferson Avenue",
+        "info": "",
+        "accessibility": "ENTRIES: East entry parking accessible. FLOORS: 1st floor.",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0205, 0018H"
+    },
+    {
+        "files": "pharmacy",
+        "building": "Pharmacy",
+        "address": "1601 SW Jefferson Ave",
+        "info": "",
+        "accessibility": "ENTRIES: East entry: level to 1st (utility entry) (locked from outside). FLOORS: All floors; elevator (no Braille).",
+        "brInfo": "1 gender inclusive restroom in room: 0307B"
+    },
+    {
+        "files": "bell-tower",
+        "building": "Bell Tower",
+        "address": "",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "women-gender-center",
+        "building": "Hattie Redmond Women and Gender Center",
+        "address": "1700 SW Pioneer Place",
+        "info": "",
+        "accessibility": "ENTRIES: North entry: Ramp to main floor. FLOORS: Main floor only.",
+        "brInfo": "1 gender inclusive restroom in room: 0120A"
+    },
+    {
+        "files": "joyce-hall",
+        "building": "Joyce Collin Furman Hall",
+        "address": "200 SW 15th Street",
+        "info": "",
+        "accessibility": "ENTRIES: South entry: ramp up to 1st floor; Automatic door West Entrance. FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": "1 gender inclusive restroom in room: 0205"
+    },
+    {
+        "files": "community-hall",
+        "building": "Community Hall",
+        "address": "1650 SW Pioneer Place",
+        "info": "",
+        "accessibility": "ENTRIES: South entry: ramp up to 1st floor. FLOORS: All floors; elevator (Braille controls).",
+        "brInfo": "1 gender inclusive restroom in room: 0109"
+    },
+    {
+        "files": "finley-hall",
+        "building": "Finley Hall",
+        "address": "2100 SW May Way",
+        "info": "",
+        "accessibility": "ENTRIES: north and south main entrances of the building. FLOORS: All floors; elevator.",
+        "brInfo": ""
+    },
+    {
+        "files": "arnold-dining",
+        "building": "Arnold Dining Center",
+        "address": "681 SW 26th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "1 gender inclusive restroom in room: 0106"
+    },
+    {
+        "files": "bloss-hall",
+        "building": "Bloss Hall",
+        "address": "2001 SW Western Boulevard",
+        "info": "",
+        "accessibility": "ENTRIES: north and south main entries. FLOORS: All floors; elevator.",
+        "brInfo": ""
+    },
+    {
+        "files": "carrie-hall",
+        "building": "Carrie Halsell Residence Hall",
+        "address": "644 SW 17th Street",
+        "info": "",
+        "accessibility": "ENTRIES: east and west main entrances of the building. FLOORS: All floors; elevator. FACILITIES: Wheelchair accessible.",
+        "brInfo": ""
+    },
+    {
+        "files": "illc",
+        "building": "International Living Learning Center",
+        "address": "1701 SW Western Boulevard",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "4 gender inclusive restrooms in rooms: 0169, 0257, 0357, 0557"
+    },
+    {
+        "files": "university-plaza",
+        "building": "University Plaza",
+        "address": "1600 SW Western Boulevard",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "pride-center",
+        "building": "Pride Center",
+        "address": "1553 SW A Avenue",
+        "info": "The Pride Center building will remain in its location on A street, however it is currently in the middle of a major addition and renovation. During construction the programs and staff have been located on the first floor of the Student Experience Center (SEC), space 0112.",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "adams-hall",
+        "building": "Adams Hall",
+        "address": "606 SW 15th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "3 gender inclusive restrooms in rooms: 0103, 0106, 0203"
+    },
+    {
+        "files": "cascade-hall",
+        "building": "Cascade Hall",
+        "address": "601 SW 17th Street",
+        "info": "",
+        "accessibility": "ENTRIES: Northwest entry to ceramics lab only. FLOORS: Ceramics lab (1st floor) only; 11/2 lip up to 1st on other.",
+        "brInfo": "4 gender inclusive restrooms in rooms: 0125, 0126, W121, W223"
+    },
+    {
+        "files": "industrial-annex",
+        "building": "Industrial Building Annex",
+        "address": "611 SW 17th St",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "custodial-building",
+        "building": "Custodial Services Building",
+        "address": "621 SW 17th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "softball-br",
+        "building": "Softball Field Restrooms",
+        "address": "2200 Western Boulevard",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "softball-stadium",
+        "building": "Softball Stadium",
+        "address": "2200 Western Boulevard",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "hilton-inn",
+        "building": "Hilton Garden Inn",
+        "address": "2500 SW Western Boulevard",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "oak-creek",
+        "building": "Oak Creek Building",
+        "address": "3015 SW Western Blvd",
+        "info": "",
+        "accessibility": "ENTRIES: North and South entrances from parking lots; no automatic doors. FLOORS: Two floors; no elevator.",
+        "brInfo": "4 gender inclusive restrooms in rooms: 0256, 0122, 0124, 0175B"
+    },
+    {
+        "files": "flr-garage-warehouse",
+        "building": "F R L Garage & Warehouse",
+        "address": "3015 SW Western Blvd",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "flr-wood",
+        "building": "F R L Lumber Storage",
+        "address": "3015 SW Western Blvd",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "flr-greenhouse",
+        "building": "F R L Greenhouse",
+        "address": "3015 SW Western Blvd",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "flr-forestry-greenhouse",
+        "building": "F R L Forestry Greenhouse",
+        "address": "3015 SW Western Blvd",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "flr-research-greenhouse",
+        "building": "F R L Forestry Greenhouse",
+        "address": "3015 SW Western Blvd",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "flr-warehouse",
+        "building": "F R L Warehouse",
+        "address": "3015 SW Western Blvd",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "western-building",
+        "building": "Western Building",
+        "address": "850 SW 35th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0106, 0106A"
+    },
+    {
+        "files": "western-shops",
+        "building": "Western Shops",
+        "address": "850 SW 35th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "entomology-storage",
+        "building": "Entomology Machine Storage",
+        "address": "Apiary",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "bee-building",
+        "building": "Apiary (Bee) Building",
+        "address": "Apiray Building",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "fumigatorium",
+        "building": "Fumigatorium & Shop",
+        "address": "Dust Mixing - Machine Storage",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
     },
     {
         "files": "sameritan-center",
         "building": "Samaritan Athletic Sports Medicine Center",
         "address": "845 SW 30th Street",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": "2 gender inclusive restrooms in rooms: 0106, 0211"
     },
@@ -67,7 +1403,7 @@
         "files": "osu-parking",
         "building": "OSU Parking",
         "address": "661 SW 26th Street",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": ""
     },
@@ -75,7 +1411,7 @@
         "files": "buoy-lab",
         "building": "Oceanography Buoy Lab",
         "address": "891 SW 30th Street",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": ""
     },
@@ -83,7 +1419,7 @@
         "files": "ocean-mixing",
         "building": "Ocean Mixing Lab",
         "address": "891 SW 30th Street",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": ""
     },
@@ -91,7 +1427,7 @@
         "files": "machine-tech-development",
         "building": "CEOAS Machine and Technical Development",
         "address": "891 SW 30th Street",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": ""
     },
@@ -99,7 +1435,7 @@
         "files": "cruise-staging",
         "building": "Cruise and Expedition Staging",
         "address": "4700 SW Research Way",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": ""
     },
@@ -107,7 +1443,7 @@
         "files": "coastal-oceanography",
         "building": "Coastal Oceanography Lab",
         "address": "891 SW 30th Street",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": ""
     },
@@ -115,7 +1451,7 @@
         "files": "marine-tech",
         "building": "Marine Technician Building",
         "address": "891 SW 30th Street",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": ""
     },
@@ -123,7 +1459,7 @@
         "files": "oceanography-instrumentation",
         "building": "Oceanography Instrumentation Lab",
         "address": "891 SW 30th Street",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": ""
     },
@@ -131,7 +1467,7 @@
         "files": "ch2m-alumni",
         "building": "CH2M Hill Alumni Center",
         "address": "725 SW 26th Street",
-        "description": "",
+        "info": "",
         "accessibility": "ENTRIES: All. FLOORS: All.",
         "brInfo": "1 gender inclusive restroom in room: 0107"
     },
@@ -139,14 +1475,14 @@
         "files": "lasells-center",
         "building": "LaSells Stewart Center",
         "address": "875 SW 26th Street",
-        "description": "",
+        "info": "",
         "accessibility": "ENTRIES: West ENTRIES: ramp up to courtyard; level entry into main floor. FLOORS: 1st floor: all areas accessible except Austin Auditorium balcony."
     },
     {
         "files": "beth-ray",
         "building": "Beth Ray Center For Academic Support",
         "address": "671 SW 26th Street",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": "1 gender inclusive restroom in room: 0125"
     },
@@ -154,7 +1490,7 @@
         "files": "cesar-chavez",
         "building": "Centro Cultural Cesar Chavez",
         "address": "691 SW 26th Street",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": "2 gender inclusive restrooms in rooms: 0109, 0110"
     },
@@ -162,7 +1498,7 @@
         "files": "tennis-pavilion",
         "building": "Tennis Pavilion",
         "address": "2801 SW Washington Way",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": ""
     },
@@ -170,7 +1506,7 @@
         "files": "maintenance-pavilion",
         "building": "Outdoor Rec Maintenance Pavilion",
         "address": "2781 SW Washington Way",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": ""
     },
@@ -178,7 +1514,7 @@
         "files": "cauthorn-hall",
         "building": "Cauthorn Hall",
         "address": "361 SW Sackett Place",
-        "description": "",
+        "info": "",
         "accessibility": "ENTRIES: interior of the residence hall quad. FLOORS: All floors; elevator.",
         "brInfo": ""
     },
@@ -186,7 +1522,7 @@
         "files": "poling-hall",
         "building": "Poling Hall",
         "address": "260 SW Weatherford Place",
-        "description": "",
+        "info": "",
         "accessibility": "ENTRIES: west entrance, off of Weatherford Place. FLOORS: all floors; elevator. FACILITIES: wheelchair accessible facilities.",
         "brInfo": ""
     },
@@ -194,7 +1530,7 @@
         "files": "buxton-hall",
         "building": "Buxton Hall",
         "address": "310 SW Weatherford Place",
-        "description": "",
+        "info": "",
         "accessibility": "ENTRIES: corner of Weatherford Place and Jefferson Street. FLOORS: A floors; elevator. FACILITIES: wheelchair accessible.",
         "brInfo": ""
     },
@@ -202,7 +1538,7 @@
         "files": "hawley-hall",
         "building": "Hawley Hall",
         "address": "311 SW Sackett Place",
-        "description": "",
+        "info": "",
         "accessibility": "ENTRIES: corner of Sackett Way and Jefferson Street. FLOORS: All floors; elevators. FACILITIES: wheelchair accessible.",
         "brInfo": ""
     },
@@ -210,7 +1546,7 @@
         "files": "weatherford-hall",
         "building": "Weatherford Hall",
         "address": "300 SW 26th Street",
-        "description": "",
+        "info": "",
         "accessibility": "ENTRIES: west and east north facing entrances on the first floor, and an accessible entrance located on the west south facing ground floor. FLOORS: all floors; elevator. FACILITIES: wheelchair accessible.",
         "brInfo": "4 gender inclusive restrooms in rooms: B100, D109, EG03, EG04"
     },
@@ -218,7 +1554,7 @@
         "files": "beaver-store",
         "building": "OSU Beaver Store",
         "address": "663 SW 26th Street",
-        "description": "",
+        "info": "",
         "accessibility": "",
         "brInfo": ""
     }

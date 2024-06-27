@@ -127,7 +127,7 @@ function drag(e) {
 
 function stopDragging() {
     isDragging = false;
-    canvas.style.cursor = hoveringBuilding ? 'pointer' : 'grab';
+    canvas.style.cursor = hoveringBuilding ? 'pointer' : 'default';
 }
 
 // calc if x y is on building
@@ -161,7 +161,7 @@ canvas.addEventListener('mousemove', function(e) {
             hoveringBuilding = hovering;
         }
 
-        canvas.style.cursor = hoveringBuilding ? 'pointer' : 'grab';
+        canvas.style.cursor = hoveringBuilding ? 'pointer' : 'default';
     }
 });
 
@@ -210,7 +210,6 @@ canvas.addEventListener('click', function(e) {
   if (clickedBuilding) {
     setSelectedBuilding(clickedBuilding);
     setHighlightInfo(buildings.get(clickedBuilding).data);
-    console.log(`clicked on ${buildings.get(clickedBuilding).data.building}`);
   } else {
     setSelectedBuilding(null);
   }
