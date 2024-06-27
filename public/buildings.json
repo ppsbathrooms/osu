@@ -1464,6 +1464,86 @@
         "brInfo": ""
     },
     {
+        "files": "oceanography-staging",
+        "building": "Oceanography Staging Bldg-Cyclotron",
+        "address": "850 SW 30th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "nancy-aerospace",
+        "building": "Nancy Squires Aerospace Lab",
+        "address": "852 SW 30th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "radiation-center",
+        "building": "Radiation Center",
+        "address": "3451 SW Jefferson Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "1 gender inclusive restroom in room: B126B"
+    },
+    {
+        "files": "radiation-center-greenhouse",
+        "building": "Radiation Center Greenhouse",
+        "address": "35th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "environmental-safety",
+        "building": "Environmental Health & Safety Annex",
+        "address": "190 SW 35th Street",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "usda-seeds",
+        "building": "FED - USDA National Forage Seed Production Research Center",
+        "address": "3540 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "clark-lab",
+        "building": "Clark Laboratory",
+        "address": "3260 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "motor-pool",
+        "building": "Motor Pool",
+        "address": "3200 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": "2 gender inclusive restrooms in rooms: 0100A, 0100CC"
+    },
+    {
+        "files": "motor-pool-annex",
+        "building": "Motor Pool Annex",
+        "address": "3220 SW Campus Way",
+        "info": "",
+        "accessibility": "",
+        "brInfo": ""
+    },
+    {
+        "files": "crop-science",
+        "building": "Crop Science Building",
+        "address": "3050 SW Campus Way",
+        "info": "",
+        "accessibility": "ENTRIES: North entry: level to 1st floor; East entry: level to 1st floor. FLOORS: All floors; elevator (no Braille).",
+        "brInfo": ""
+    },
+    {
         "files": "ch2m-alumni",
         "building": "CH2M Hill Alumni Center",
         "address": "725 SW 26th Street",
