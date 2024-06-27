@@ -4,14 +4,13 @@ const ctx = canvas.getContext('2d');
 const baseMap = new Image();
 baseMap.src = '/style/maps/osu/osu-base.svg';
 
-const buildings = {};
-var selectedBuilding = null;
+const buildings = new Map();
+let selectedBuilding = null;
 
 let isDragging = false;
-let startX, startY;
+let lastX, lastY;
 let offsetX = 0, offsetY = 0;
 let scale = 1;
-let rafId = null;
 let hoveringBuilding = null;
 
 // svg filters for hover and select
@@ -35,7 +34,6 @@ const svgFilters = `
     </filter>
   </svg>
 `;
-
 
 document.body.insertAdjacentHTML('afterbegin', svgFilters);
 
@@ -71,62 +69,70 @@ function loadBuildingsFromJSON() {
           building.hitCtx.drawImage(this, 0, 0);
           drawImage();
         };
-        buildings[buildingData.files] = building;
+        buildings.set(buildingData.files, building);
       });
     })
     .catch(error => console.error('Error loading buildings:', error));
 }
 
 function drawImage() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.save();
-  // zoom and pan offsets
-  ctx.translate(offsetX, offsetY);
-  ctx.scale(scale, scale);
-  ctx.drawImage(baseMap, 0, 0);
-  
-  // draws buildings and applies filters
-  for (const name in buildings) {
-    const building = buildings[name];
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.save();
-    if (name === selectedBuilding) {
-      ctx.filter = 'url(#selected-filter)';
-    } else if (name === hoveringBuilding) {
-      ctx.filter = 'url(#hover-filter)';
-    }
-    ctx.drawImage(building.image, 0, 0);
+    ctx.translate(offsetX, offsetY);
+    ctx.scale(scale, scale);
+    
+    // draw base map
+    ctx.drawImage(baseMap, 0, 0);
+    
+    // draw buildings
+    buildings.forEach((building, name) => {
+        ctx.save();
+        if (name === selectedBuilding) {
+            ctx.filter = 'url(#selected-filter)';
+        } else if (name === hoveringBuilding) {
+            ctx.filter = 'url(#hover-filter)';
+        }
+        ctx.drawImage(building.image, 0, 0);
+        ctx.restore();
+    });
+    
     ctx.restore();
-  }
-  
-  ctx.restore();
 }
 
-// update map position when dragging
-function updatePosition(e) {
-  offsetX = e.clientX - startX;
-  offsetY = e.clientY - startY;
+function update() {
+    drawImage();
+    requestAnimationFrame(update);
 }
 
-// animate frame while dragging
-function animateFrame() {
-  drawImage();
-  if (isDragging) {
-    rafId = requestAnimationFrame(animateFrame);
-  }
+function startDragging(e) {
+    isDragging = true;
+    lastX = e.clientX;
+    lastY = e.clientY;
+    canvas.style.cursor = 'grabbing';
+}
+
+function drag(e) {
+    if (!isDragging) return;
+    
+    const dx = e.clientX - lastX;
+    const dy = e.clientY - lastY;
+    
+    offsetX += dx;
+    offsetY += dy;
+    
+    lastX = e.clientX;
+    lastY = e.clientY;
 }
 
 function stopDragging() {
-  isDragging = false;
-  if (rafId) {
-    cancelAnimationFrame(rafId);
-    rafId = null;
-  }
+    isDragging = false;
+    canvas.style.cursor = hoveringBuilding ? 'pointer' : 'grab';
 }
 
-// calc if point is on building
+// calc if x y is on building
 function isPointOnBuilding(x, y) {
-  for (const name in buildings) {
-    const building = buildings[name];
+  for (const [name, building] of buildings) {
     if (x >= 0 && x < building.image.width && y >= 0 && y < building.image.height) {
       if (building.hitCtx) {
         const pixelData = building.hitCtx.getImageData(x, y, 1, 1).data;
@@ -138,47 +144,27 @@ function isPointOnBuilding(x, y) {
   }
   return null;
 }
-// draggin start
-canvas.addEventListener('mousedown', function(e) {
-  isDragging = true;
-  startX = e.clientX - offsetX;
-  startY = e.clientY - offsetY;
-  rafId = requestAnimationFrame(animateFrame);
-  canvas.style.cursor = 'move';
-});
 
-// draggin move
+canvas.addEventListener('mousedown', startDragging);
+canvas.addEventListener('mousemove', drag);
+canvas.addEventListener('mouseup', stopDragging);
+canvas.addEventListener('mouseleave', stopDragging);
+
 canvas.addEventListener('mousemove', function(e) {
-  if (isDragging) {
-    updatePosition(e);
-  } else {
-    const rect = canvas.getBoundingClientRect();
-    const mouseX = (e.clientX - rect.left - offsetX) / scale;
-    const mouseY = (e.clientY - rect.top - offsetY) / scale;
+    if (!isDragging) {
+        const rect = canvas.getBoundingClientRect();
+        const mouseX = (e.clientX - rect.left - offsetX) / scale;
+        const mouseY = (e.clientY - rect.top - offsetY) / scale;
 
-    const hovering = isPointOnBuilding(mouseX, mouseY);
-    if (hovering !== hoveringBuilding) {
-      hoveringBuilding = hovering;
-      drawImage();
+        const hovering = isPointOnBuilding(mouseX, mouseY);
+        if (hovering !== hoveringBuilding) {
+            hoveringBuilding = hovering;
+        }
+
+        canvas.style.cursor = hoveringBuilding ? 'pointer' : 'grab';
     }
-
-    canvas.style.cursor = hovering ? 'pointer' : 'default';
-  }
 });
 
-canvas.addEventListener('mouseup', function(e) {
-  stopDragging();
-  canvas.style.cursor = hoveringBuilding ? 'pointer' : 'default';
-});
-
-canvas.addEventListener('mouseleave', function() {
-  stopDragging();
-  hoveringBuilding = null;
-  canvas.style.cursor = 'default';
-  drawImage();
-});
-
-// zoomin
 canvas.addEventListener('wheel', function(e) {
   e.preventDefault();
   const rect = canvas.getBoundingClientRect();
@@ -194,21 +180,27 @@ canvas.addEventListener('wheel', function(e) {
 
     scale = newScale;
 
-    // zoom towards mouse
     offsetX = mouseX - imgX * scale;
     offsetY = mouseY - imgY * scale;
-
-    drawImage();
   }
 });
 
-window.addEventListener('resize', function() {
+// limit refresh when resizing
+const debounce = (func, delay) => {
+  let debounceTimer;
+  return function() {
+    const context = this;
+    const args = arguments;
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => func.apply(context, args), delay);
+  }
+}
+
+window.addEventListener('resize', debounce(function() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  drawImage();
-});
+}, 100));
 
-// clickin
 canvas.addEventListener('click', function(e) {
   const rect = canvas.getBoundingClientRect();
   const clickX = (e.clientX - rect.left - offsetX) / scale;
@@ -217,8 +209,8 @@ canvas.addEventListener('click', function(e) {
   const clickedBuilding = isPointOnBuilding(clickX, clickY);
   if (clickedBuilding) {
     setSelectedBuilding(clickedBuilding);
-    setHighlightInfo(buildings[clickedBuilding].data);
-    console.log(`Clicked on ${buildings[clickedBuilding].data.building}`);
+    setHighlightInfo(buildings.get(clickedBuilding).data);
+    console.log(`clicked on ${buildings.get(clickedBuilding).data.building}`);
   } else {
     setSelectedBuilding(null);
   }
@@ -230,20 +222,19 @@ function setSelectedBuilding(building) {
     return;
   }
   if (selectedBuilding) {
-    buildings[selectedBuilding].isSelected = false;
+    buildings.get(selectedBuilding).isSelected = false;
   }
   selectedBuilding = building;
   if (selectedBuilding) {
-    buildings[selectedBuilding].isSelected = true;
+    buildings.get(selectedBuilding).isSelected = true;
   }
-  drawImage();
 }
 
-// deselect current building
 function deselectBuilding() {
   if (selectedBuilding) {
-    buildings[selectedBuilding].isSelected = false;
+    buildings.get(selectedBuilding).isSelected = false;
     selectedBuilding = null;
-    drawImage();
   }
 }
+
+requestAnimationFrame(update);
