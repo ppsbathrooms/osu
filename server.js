@@ -8,7 +8,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 
-const chalk = require('chalk');
+//const chalk = require('chalk');
 const PORT = 42069;
 
 app.get('/', (req, res) => {
